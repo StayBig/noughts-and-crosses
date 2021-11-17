@@ -1,0 +1,28 @@
+body {
+  background-color: DarkGray;
+}
+
+#grid {
+  background-color: black;
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -300px;
+  margin-top: -300px;
+}
+
+.grid-square {
+  margin: auto;
+  background-color: grey;
+  width: 120px;
+  height: 120px;
+  font-family: arial;
+  text-align: center;
+  font-size: 96px;
+}
+
+.grid-square:hover {
+  background-color: lightgray;
+}
