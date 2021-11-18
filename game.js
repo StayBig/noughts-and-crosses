@@ -30,7 +30,7 @@ function checkScores(stateX, stateO) {
 
     var end = false
 
-    for (let i = 0; i < 7; i++) {
+    for (let i = 0; i <= 7; i++) {
         let currentWin = winningPos[i]
 
         let a = currentWin[0]
@@ -43,15 +43,7 @@ function checkScores(stateX, stateO) {
             end = true
             break
         }
-    }
-
-    for (let i = 0; i < 7; i++) {
-        currentWin = winningPos[i]
-
-        let a = currentWin[0]
-        let b = currentWin[1]
-        let c = currentWin[2]
-
+        
         if (stateO.includes(a) && stateO.includes(b) && stateO.includes(c)) {
             alert("Noughts Wins")
             location.reload()
