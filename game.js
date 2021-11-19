@@ -68,13 +68,13 @@ function getGameState() {
     gameStateO = []
 
     for (let i = 1; i < 10; i++) {
-        if (document.getElementById(i.toString()).innerHTML == "x") {
+        if (document.getElementById(i.toString()).innerHTML == "X") {
             gameStateX.push(i)
         }
     }
 
     for (let i = 1; i < 10; i++) {
-        if (document.getElementById(i.toString()).innerHTML == "o") {
+        if (document.getElementById(i.toString()).innerHTML == "O") {
             gameStateO.push(i)
         }
     }
