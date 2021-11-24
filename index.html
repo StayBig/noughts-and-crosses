@@ -1,34 +1,41 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Noughts and Crosses</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./styles.css">
-    </head>
-    <body>
-        <font color=black>
-        <h1> Noughts And Crosses. </h1>
-        <script src="./game.js" async defer></script>
-
-        <table id="grid">
-            <tr>
-                <td id="1" class="grid-square" onclick="add(1)"></td>
-                <td id="2" class="grid-square" onclick="add(2)"></td>
-                <td id="3" class="grid-square" onclick="add(3)"></td>
-            </tr>
-            <tr>
-                <td id="4" class="grid-square" onclick="add(4)"></td>
-                <td id="5" class="grid-square" onclick="add(5)"></td>
-                <td id="6" class="grid-square" onclick="add(6)"></td>
-            </tr>
-            <tr>
-                <td id="7" class="grid-square" onclick="add(7)"></td>
-                <td id="8" class="grid-square" onclick="add(8)"></td>
-                <td id="9" class="grid-square" onclick="add(9)"></td>
-            </tr>
-        </table>
-    </body>
-</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "styles.css">
+    <script src="AI.js" defer></script>
+    <script src="TicTacToe.js" defer></script>
+    
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="board" id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+    </div>
+    <div class="sources">
+        <p> 
+            HTML and CSS from 
+            <a href="https://youtu.be/Y-GkMjUZsmM">Web Dev Simplified</a>
+            <br> All JavaScript code is my own 
+        </p>
+    </div>
+    <div class="winning-message" id="winning-message">
+        <div data-winning-message-text></div>
+        <button id="restart-button">Restart</button>
+    </div>
+    <div class="player-select" id="player-select">
+        Select number of players
+        <button id="single-player">One Player</button>
+        <button id="multi-player">Two Players</button>
+    </div>
+</body>
+</html> 
