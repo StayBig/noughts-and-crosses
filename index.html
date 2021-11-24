@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="AI.js" defer></script>
+    <script src="TicTacToe.js" defer></script>
+
+    <title>Noughts and Crosses</title>
+  </head>
+  <body>
+    <center><h1>Noughts and Crosses</h1></center>
+    <div class="board" id="board">
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+    </div>
+    <div class="winning-message" id="winning-message">
+      <div data-winning-message-text></div>
+      <button id="restart-button">Restart</button>
+    </div>
+    <div class="player-select" id="player-select">
+      <b>Select game style</b>
+      <button id="single-player"><b>Against AI</b></button>
+      <button id="multi-player"><b>Local Multiplayer</b></button>
+    </div>
+  </body>
+</html>
